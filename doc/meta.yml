@@ -1,0 +1,8 @@
+---
+"$schema": http://json-schema.org/draft-04/hyper-schema
+description: Test API for JSON Schema study
+id: jsonschema-study
+links:
+- href: https://example.com
+  rel: self
+title: Test API
