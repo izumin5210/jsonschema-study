@@ -51,7 +51,7 @@
       "links": [
         {
           "description": "Create a new user.",
-          "href": "/users",
+          "href": "/api/users",
           "method": "POST",
           "rel": "create",
           "schema": {
@@ -65,28 +65,28 @@
         },
         {
           "description": "Delete an existing user.",
-          "href": "/users/{(%23%2Fdefinitions%2Fuser%2Fdefinitions%2Fid)}",
+          "href": "/api/users/{(%23%2Fdefinitions%2Fuser%2Fdefinitions%2Fid)}",
           "method": "DELETE",
           "rel": "destroy",
           "title": "Delete"
         },
         {
           "description": "Info for existing user.",
-          "href": "/users/{(%23%2Fdefinitions%2Fuser%2Fdefinitions%2Fid)}",
+          "href": "/api/users/{(%23%2Fdefinitions%2Fuser%2Fdefinitions%2Fid)}",
           "method": "GET",
           "rel": "self",
           "title": "Info"
         },
         {
           "description": "List existing users.",
-          "href": "/users",
+          "href": "/api/users",
           "method": "GET",
           "rel": "instances",
           "title": "List"
         },
         {
           "description": "Update an existing user.",
-          "href": "/users/{(%23%2Fdefinitions%2Fuser%2Fdefinitions%2Fid)}",
+          "href": "/api/users/{(%23%2Fdefinitions%2Fuser%2Fdefinitions%2Fid)}",
           "method": "PATCH",
           "rel": "update",
           "schema": {

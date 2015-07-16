@@ -2,11 +2,11 @@
 Test API for JSON Schema study
 
 * [User](#user)
- * [POST /users](#post-users)
- * [DELETE /users/:id](#delete-usersid)
- * [GET /users/:id](#get-usersid)
- * [GET /users](#get-users)
- * [PATCH /users/:id](#patch-usersid)
+ * [POST /api/users](#post-apiusers)
+ * [DELETE /api/users/:id](#delete-apiusersid)
+ * [GET /api/users/:id](#get-apiusersid)
+ * [GET /api/users](#get-apiusers)
+ * [PATCH /api/users/:id](#patch-apiusersid)
 
 ## User
 User account
@@ -34,12 +34,12 @@ User account
  * Type: string
  * Format: date-time
 
-### POST /users
+### POST /api/users
 Create a new user.
 
 
 ```
-POST /users HTTP/1.1
+POST /api/users HTTP/1.1
 Host: example.com
 ```
 
@@ -55,11 +55,11 @@ Content-Type: application/json
 }
 ```
 
-### DELETE /users/:id
+### DELETE /api/users/:id
 Delete an existing user.
 
 ```
-DELETE /users/1 HTTP/1.1
+DELETE /api/users/1 HTTP/1.1
 Host: example.com
 ```
 
@@ -75,11 +75,11 @@ Content-Type: application/json
 }
 ```
 
-### GET /users/:id
+### GET /api/users/:id
 Info for existing user.
 
 ```
-GET /users/1 HTTP/1.1
+GET /api/users/1 HTTP/1.1
 Host: example.com
 ```
 
@@ -95,11 +95,11 @@ Content-Type: application/json
 }
 ```
 
-### GET /users
+### GET /api/users
 List existing users.
 
 ```
-GET /users HTTP/1.1
+GET /api/users HTTP/1.1
 Host: example.com
 ```
 
@@ -117,12 +117,12 @@ Content-Type: application/json
 ]
 ```
 
-### PATCH /users/:id
+### PATCH /api/users/:id
 Update an existing user.
 
 
 ```
-PATCH /users/1 HTTP/1.1
+PATCH /api/users/1 HTTP/1.1
 Host: example.com
 ```
 
