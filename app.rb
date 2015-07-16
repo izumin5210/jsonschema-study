@@ -5,6 +5,6 @@ require 'sinatra/reloader' if development?
 
 namespace '/api' do
   get '/users' do
-    [].to_json
+    json []
   end
 end
