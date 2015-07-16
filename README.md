@@ -16,7 +16,7 @@ And run with:
 $ bundle exec rackup config.ru -p 5000
 ```
 
-View at: http:localhost:5000
+View at: http://localhost:5000
 
 ## Usage
 
