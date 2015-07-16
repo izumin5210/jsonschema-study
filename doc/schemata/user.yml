@@ -1,0 +1,78 @@
+---
+"$schema": http://json-schema.org/draft-04/hyper-schema
+title: User
+description: User account
+stability: prototype
+strictProperties: true
+type:
+- object
+definitions:
+  id:
+    description: unique identifier of user
+    readOnly: true
+    format: uuid
+    type:
+    - integer
+    example: 1
+  name:
+    description: unique name of user
+    readOnly: true
+    type:
+    - string
+    example: Masayuki IZUMI
+  created_at:
+    description: when user was created
+    format: date-time
+    type:
+    - string
+    example: "2015-07-16T12:00:00+09:00"
+  updated_at:
+    description: when user was updated
+    format: date-time
+    type:
+    - string
+    example: "2015-07-16T12:00:00+09:00"
+links:
+- description: Create a new user.
+  href: "/users"
+  method: POST
+  rel: create
+  schema:
+    properties: {}
+    type:
+    - object
+  title: Create
+- description: Delete an existing user.
+  href: "/users/{(%2Fschemata%2Fuser%23%2Fdefinitions%2Fid)}"
+  method: DELETE
+  rel: destroy
+  title: Delete
+- description: Info for existing user.
+  href: "/users/{(%2Fschemata%2Fuser%23%2Fdefinitions%2Fid)}"
+  method: GET
+  rel: self
+  title: Info
+- description: List existing users.
+  href: "/users"
+  method: GET
+  rel: instances
+  title: List
+- description: Update an existing user.
+  href: "/users/{(%2Fschemata%2Fuser%23%2Fdefinitions%2Fid)}"
+  method: PATCH
+  rel: update
+  schema:
+    properties: {}
+    type:
+    - object
+  title: Update
+properties:
+  created_at:
+    "$ref": "/schemata/user#/definitions/created_at"
+  id:
+    "$ref": "/schemata/user#/definitions/id"
+  name:
+    "$ref": "/schemata/user#/definitions/name"
+  updated_at:
+    "$ref": "/schemata/user#/definitions/updated_at"
+id: schemata/user
