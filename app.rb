@@ -3,6 +3,8 @@ Bundler.require
 
 require 'sinatra/reloader' if development?
 
-get '/users' do
-  [].to_json
+namespace '/api' do
+  get '/users' do
+    [].to_json
+  end
 end
