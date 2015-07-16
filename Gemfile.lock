@@ -8,6 +8,7 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     backports (3.6.5)
+    diff-lcs (1.2.5)
     erubis (2.7.0)
     i18n (0.7.0)
     jdoc (0.4.2)
@@ -34,6 +35,20 @@ GEM
     rack-test (0.6.3)
       rack (>= 1.0)
     redcarpet (3.3.2)
+    rspec (3.3.0)
+      rspec-core (~> 3.3.0)
+      rspec-expectations (~> 3.3.0)
+      rspec-mocks (~> 3.3.0)
+    rspec-core (3.3.2)
+      rspec-support (~> 3.3.0)
+    rspec-expectations (3.3.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.3.0)
+    rspec-mocks (3.3.2)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.3.0)
+    rspec-request_describer (0.0.9)
+    rspec-support (3.3.0)
     sinatra (1.4.6)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -57,5 +72,8 @@ DEPENDENCIES
   jdoc
   prmd
   rack-json_schema
+  rack-test
+  rspec
+  rspec-request_describer
   sinatra
   sinatra-contrib
